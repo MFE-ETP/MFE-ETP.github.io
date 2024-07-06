@@ -45,7 +45,11 @@
   <script src="static/js/index.js"></script>
   <style>
         .image-container img {
-            width: 50vw;
+            width: 70vw;
+            height: auto;
+        }
+        .image-container2 img {
+            width: 30vw;
             height: auto;
         }
         .centered {
@@ -151,10 +155,10 @@
       <p>We proposed an evaluation framework designed for embodied task planning, which consists of four levels of crucial capabilities, namely object understanding, spatio-temporal perception, task understanding, and embodied reasoning. Each capability dimension is further decomposed into several sub-aspects.</p>
         <div class="image-container centered">
           <img src="imgs/framework.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
+        </div>
+      <h2 class="subtitle has-text-centered">
             Evaluation framework.
           </h2>
-        </div>
       </div>
   </div>
 </section>
@@ -169,10 +173,11 @@
       <p>We display example question-and-answer pairs of our benchmark on different capability dimensions and the six types of task instructions used. In addition, we have carefully designed a total of 156 task descriptions for different capability dimensions and combined them with specific task instructions to generate more diverse task text prompts. </p>
         <div class="image-container centered">
           <img src="imgs/data_example.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
+          
+        </div>
+      <h2 class="subtitle has-text-centered">
             Example questions of MFE-ETP benchmark and illustration of the six types of task formats.
           </h2>
-        </div>
       </div>
   </div>
 </section>
@@ -189,10 +194,11 @@
       <p>Our evaluation workflow involves benchmark construction, data preparation, model deployment, and metric calculation to derive the final score.</p>
         <div class="image-container centered">
           <img src="imgs/evaluation_process.png" alt="MY ALT TEXT"/>
-          <h2 class="subtitle has-text-centered">
+          
+        </div>
+      <h2 class="subtitle has-text-centered">
             Evaluation workflow.
           </h2>
-        </div>
       </div>
   </div>
 </section>
@@ -205,7 +211,7 @@
     <div class="container">
       <h2 class="title is-3">Results</h2>
       <p>We evaluate the performance of GPT-4V and five other open-source MFMs, namely BLIP-2, MiniGPT-4, InstructBLIP, LLaVA-1.5, and MiniCPM. We can draw the following general conclusions: 1. GPT4V and MiniCPM significantly outperform the other four MFMs, with a performance improvement of over 100\% compared to the worst-performing LLaVA-1.5. 2. MiniCPM performs close to GPT-4V and is better than the other open-source MFMs in all aspects. 3. Compared with higher-level and more abstract task understanding capabilities, MFMs generally perform worse in low-level perception capabilities such as object understanding and spatiotemporal perception.</p>
-        <div class="image-container centered">
+        <div class="image-container2 centered">
           <img src="imgs/radar.png" alt="MY ALT TEXT"/>
         </div>
         <div class="image-container centered">
